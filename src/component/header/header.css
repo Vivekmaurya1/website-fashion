@@ -1,0 +1,158 @@
+header {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.col-sm-2 img {
+  max-width: 120px;
+  height: 100px;
+  padding: 8px;
+  margin-left: -30px;
+  margin-top: -31px;
+}
+
+header .headersearch {
+  width: 110%; /* Adjusted to 100% to fit the container */
+  height: 45px;
+  border: 1px solid #3bb77e;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  margin-left: -120px;
+  border-radius: 5px;
+}
+
+header .headersearch .selectdropWrapper {
+  width: 18%;
+  font-size: 16px;
+  font-weight: 500; /* Use font-weight value directly */
+  position: relative;
+  padding-right: 10px; /* Optional padding to separate text from border */
+}
+
+header .headersearch .selectdropWrapper:after {
+  content: "";
+  width: 1px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 10px;
+  right: -20px;
+}
+
+header .headersearch .search {
+  flex-grow: 1; /* Allow search to take up remaining space */
+  padding-left: 30px; /* Space on the left */
+  position: relative; /* Required for absolute positioning of the icon */
+}
+
+header .headersearch .search input {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: none; /* No outline */
+  font-size: 18px;
+  padding-right: 40px; /* Space for the icon */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+header .headersearch .search .searchIcon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+header .countryWrapper .selectdropWrapper {
+  width: 180px !important;
+  border: 1px solid #ececec;
+  padding-left: 10px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  right: 60px;
+  -webkit-box-shodow: 5px 5px 15px rgb(0,0,0,0,0.05);
+  box-shadow: 5px 5px 15px rgb(0,0,0,0,0.05);
+}
+
+header .countryWrapper .selectdropWrapper .openselect {
+  width: 100%;
+}
+
+header .countryWrapper .openselect {
+  color: #279a65 !important;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
+}
+
+header .countryWrapper .selectdropWrapper .selectdrop{
+    left: 0px !important;
+}
+
+header .countryWrapper .openselect{
+    color: #279a65 !important;
+}
+.arrow2 {
+  position: absolute;
+  right: 10px;
+  color: #000;
+}
+
+header .headerTabs {
+padding-left: 5px 0px;
+}
+header .headerTabs li { 
+    margin-top: 10px;
+  position: relative;
+  margin-left: 0px;
+}
+
+header .headerTabs li span {
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+header .headerTabs li span img{
+    width: 25px;
+    height: 25px;
+}
+
+.dropdownmenu {
+    position: absolute;
+    right: -10px;
+    width: 180px;
+    height: auto;
+    background: #fff;
+    box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.05);
+    padding: 10px 0px;
+  }
+
+.dropdownmenu li{
+    width: 100% !important;
+    list-style: none;
+    margin: 0px !important;    
+}
+
+.dropdownmenu li button{
+    width: 100% !important; ;
+    text-align: left !important;
+    justify-content: flex-start !important;
+    margin: 0px;
+    color: #000 !important;
+    text-transform: capitalize; 
+    font-size: 16px !important;
+    padding: 10px 15px !important;
+
+}
+
+.dropdownmenu li button svg{
+    opacity: 0.7; 
+    margin-right: 8px !important;
+}
+
+.dropdownmenu li button:hover{
+    background: #f1f1f1 !important;
+}
