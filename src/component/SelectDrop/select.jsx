@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {ClickAwayListener} from "@mui/base/ClickAwayListener";
+import ClickAwayListener from "@mui/material/ClickAwayListener";
 import "./select.css";
 
 const Select = ({ data, placeholder, icon, arrow }) => {
@@ -29,7 +29,7 @@ const Select = ({ data, placeholder, icon, arrow }) => {
   // Filter the list based on the search input
   const filterList = (e) => {
     const keyword = e.target.value.toLowerCase();
-    const filteredList = data.filter((item) => 
+    const filteredList = data.filter((item) =>
       item.toLowerCase().includes(keyword)
     );
     setListData(filteredList);
@@ -40,14 +40,20 @@ const Select = ({ data, placeholder, icon, arrow }) => {
       <div className="selectdropWrapper cursor position-relative">
         {icon}
         <span className="openselect" onClick={openSelect}>
-          {selectedItem.length > 14 ? selectedItem.substr(0, 14) + "..." : selectedItem}
+          {selectedItem.length > 14
+            ? selectedItem.substr(0, 14) + "..."
+            : selectedItem}
           {arrow}
         </span>
 
         {isOpenSelect && (
           <div className="SelctDrop">
             <div className="searchField">
-              <input type="text" placeholder="Search..." onChange={filterList} />
+              <input
+                type="text"
+                placeholder="Search..."
+                onChange={filterList}
+              />
             </div>
             <ul className="searchresults">
               <li
